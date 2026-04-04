@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../index.css">
+    <title>Chi Tiết Sản Phẩm | Mocha & Co.</title>
+</head>
+
+<body>
+    <!-- Notification -->
+    <div id="cartNotification" class="cart_notification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Đã thêm vào giỏ hàng!</span>
+    </div>
+
+    <main class="product_detail_page">
+        <!-- HEADER -->
+        <header>
+            <div class="header scrolled">
+                <div class="header_left">
+                    <ul class="list_header_left">
+                        <li class="header_left-item"><a href="../index.html">Trang Chủ</a></li>
+                        <li class="header_left-item"><a href="shop.html">Cửa Hàng</a></li>
+                        <li class="header_left-item"><a href="blog.html">Blog</a></li>
+                        <li class="header_left-item"><a href="about.html">Giới Thiệu</a></li>
+                        <li class="header_left-item"><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="header_center">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../assets/img/Logo.png" alt="Mocha & Co. Logo" class="header_logo_img"></a>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_right-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm đồ uống...">
+                    </div>
+                    <div class="header_right-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PRODUCT CONTENT -->
+        <section class="split_section" style="padding-top: 150px; align-items: flex-start;">
+            <div class="split_image" style="background: #f9f9f9;">
+                <img src="../assets/img/pexels-mew-wy-1427872-2910874.jpg" alt="Product" id="mainProductImg">
+            </div>
+            <div class="split_text">
+                <nav class="breadcrumb" style="margin-bottom: 20px; font-size: 14px; color: var(--text-muted);">
+                    <a href="../index.html">Trang Chủ</a> / <a href="shop.html">Cửa Hàng</a> / <span id="breadcrumbName">Latte Creme</span>
+                </nav>
+                <h1 id="mainProductName" style="font-size: 48px; font-weight: 900; color: var(--primary-color); margin-bottom: 10px; text-transform: uppercase;">Latte Creme</h1>
+                <p class="product_price" id="mainProductPrice" style="font-size: 32px; font-weight: 800; color: var(--accent-color); margin-bottom: 30px;">45.000 VNĐ</p>
+                
+                <div class="product_description" style="margin-bottom: 35px; padding-bottom: 30px; border-bottom: 1px solid #eee;">
+                    <p id="mainProductDesc" style="font-size: 16px; color: var(--text-muted); line-height: 1.8;">
+                        Hương vị Espresso đậm đà hòa quyện cùng lớp sữa tươi mịn màng, tạo nên một tách cà phê hoàn hảo cho buổi sáng tỉnh táo.
+                    </p>
+                </div>
+
+                <!-- SIZE SELECTION -->
+                <div class="size_selection" style="margin-bottom: 35px;">
+                    <h4 style="font-weight: 800; margin-bottom: 15px; font-size: 14px; letter-spacing: 1px;">CHỌN KÍCH CỠ:</h4>
+                    <div style="display: flex; gap: 15px;">
+                        <button class="size_btn active" data-size="S" data-ml="250ml" data-extra="0">S (250ml)</button>
+                        <button class="size_btn" data-size="M" data-ml="500ml" data-extra="10000">M (500ml)</button>
+                        <button class="size_btn" data-size="L" data-ml="750ml" data-extra="20000">L (750ml)</button>
+                    </div>
+                </div>
+
+                <div class="product_purchase" style="display: flex; gap: 20px; align-items: center;">
+                    <div class="quantity_selector">
+                        <button class="qty_minus">-</button>
+                        <input type="number" value="1" id="productQty" readonly>
+                        <button class="qty_plus">+</button>
+                    </div>
+                    <button class="btn-shop add_to_cart" style="flex: 1; padding: 20px; font-size: 14px;">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+
+                <div class="product_meta" style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee;">
+                    <p style="margin-bottom: 10px; font-size: 14px;"><span style="font-weight: 800; color: var(--primary-color);">DUNG TÍCH:</span> <span id="currentMl">250ml</span></p>
+                    <p style="margin-bottom: 10px; font-size: 14px;"><span style="font-weight: 800; color: var(--primary-color);">GIAO HÀNG:</span> 15 - 30 Phút</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="list_footer">
+                    <div class="footer_item">
+                        <div class="footer_brand_wrapper">
+                            <img src="../assets/img/Cup-logo.png" alt="Mocha & Co. Cup Logo" class="footer_logo">
+                            <h2 class="footer_brand_name">MOCHA & CO.</h2>
+                        </div>
+                        <p>Tận tâm mang đến những trải nghiệm cà phê tuyệt vời nhất cho cộng đồng yêu cà phê tại Việt Nam.</p>
+                        <div class="opening_hours">
+                            <h2>GIỜ MỞ CỬA</h2>
+                            <p>Thứ 2 - Thứ 6: 07:00 - 22:00</p>
+                            <p>Thứ 7 - CN: 08:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <h2>Sản Phẩm</h2>
+                        <li>Cà phê pha máy</li>
+                        <li>Trà & Macchiato</li>
+                        <li>Bánh ngọt & Snack</li>
+                    </div>
+                    <div class="footer_item">
+                        <h2>Hỗ Trợ</h2>
+                        <li>Chính sách bảo mật</li>
+                        <li>Giao hàng & Thanh toán</li>
+                        <li>Câu hỏi thường gặp</li>
+                    </div>
+                    <div class="footer_item">
+                        <h2>Liên Hệ & Kết Nối</h2>
+                        <li class="contact-info"><i class="fa-solid fa-phone"></i> Hotline: 1800 1234</li>
+                        <li class="contact-info"><i class="fa-solid fa-envelope"></i> hello@mochaco.vn</li>
+                        <li class="contact-info"><i class="fa-solid fa-location-dot"></i> 123 Đường Cà Phê, Quận 1, TP.HCM</li>
+                        
+                        <div class="social_icons footer_social_wrapper">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p>&copy; 2026 Mocha & Co. Premium Coffee Experience. Hình ảnh minh họa được lấy từ Pexels. (www.pexels.com)</p>
+            </div>
+        </footer>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

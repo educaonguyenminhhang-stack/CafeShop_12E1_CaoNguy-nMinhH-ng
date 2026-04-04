@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../index.css">
+    <title>Cửa Hàng | Mocha & Co.</title>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER -->
+        <header>
+            <div class="header scrolled">
+                <div class="header_left">
+                    <ul class="list_header_left">
+                        <li class="header_left-item"><a href="../index.html">Trang Chủ</a></li>
+                        <li class="header_left-item"><a href="shop.html">Cửa Hàng</a></li>
+                        <li class="header_left-item"><a href="blog.html">Blog</a></li>
+                        <li class="header_left-item"><a href="about.html">Giới Thiệu</a></li>
+                        <li class="header_left-item"><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="header_center">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../assets/img/Logo.png" alt="Mocha & Co. Logo" class="header_logo_img"></a>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_right-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm đồ uống...">
+                    </div>
+                    <div class="header_right-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SUBPAGE BANNER -->
+        <section class="subpage_banner">
+            <img src="../assets/img/pexels-rdne-4921263.jpg" alt="Shop Banner">
+            <div class="banner_content">
+                <h2>Cửa Hàng</h2>
+                <p>Khám phá trọn bộ sưu tập đồ uống và các món tráng miệng thượng hạng được yêu thích nhất tại Mocha & Co.</p>
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee_container">
+            <div class="marquee_content">
+                <span>Cà phê thượng hạng</span>
+                <span>Rang xay thủ công</span>
+                <span>Giao hàng siêu tốc</span>
+                <span>Hỗ trợ 24/7</span>
+                <span>Est. 2026</span>
+                <span>Hương thơm từ nông trại Việt</span>
+            </div>
+        </div>
+
+        <!-- FILTER SECTION -->
+        <section class="shop_filter_section">
+            <div class="filter_wrapper">
+                <button class="filter_icon_btn" id="filterToggleBtn">
+                    <i class="fa-solid fa-sliders"></i>
+                    Bộ lọc
+                </button>
+                <div class="filter_dropdown" id="filterDropdown">
+                    <button class="filter_btn active" data-category="all">Tất cả</button>
+                    <button class="filter_btn" data-category="coffee">Cà phê</button>
+                    <button class="filter_btn" data-category="other">Đồ uống khác</button>
+                    <button class="filter_btn" data-category="cake">Tráng miệng</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT GRID -->
+        <section class="product grid_container" style="padding-top: 40px;">
+            <!-- Coffee -->
+            <div class="product_item" data-category="coffee" data-description="Hương vị Espresso đậm đà hòa quyện cùng lớp sữa tươi mịn màng, tạo nên một tách cà phê hoàn hảo cho buổi sáng tỉnh táo.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-mew-wy-1427872-2910874.jpg" alt="Latte" class="latte-img"></div></a>
+                    <div class="name_product">Latte Creme</div>
+                    <div class="price_product"><span>45.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="coffee" data-description="Sự kết hợp tinh tế giữa Espresso, sữa nóng và lớp bọt sữa dày dặn, mang lại cảm giác êm ái và dư vị ngọt ngào.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-fallon-michael-1928485-3551717.jpg" alt="Cappuccino" class="cappuccino-img"></div></a>
+                    <div class="name_product">Cappuccino Mellow</div>
+                    <div class="price_product"><span>49.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="coffee" data-description="Cà phê được ủ lạnh trong 24 giờ, kết hợp với lớp kem muối mặn nhẹ, tạo nên hương vị độc đáo và sảng khoái.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-skyler-ewing-266953-9281134.jpg" alt="Cold Brew" class="coldbrew-img"></div></a>
+                    <div class="name_product">Cold Brew Kem Muối</div>
+                    <div class="price_product"><span>55.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="coffee" data-description="Espresso nguyên chất kết hợp với sốt caramel ngọt ngào, tạo nên hương vị mạnh mẽ nhưng không kém phần quyến rũ.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-elkady-4862099.jpg" alt="Espresso" class="espresso-img"></div></a>
+                    <div class="name_product">Caramel Espresso</div>
+                    <div class="price_product"><span>35.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="coffee" data-description="Cà phê Robusta đậm đặc pha loãng với nước nóng, giữ trọn hương vị truyền thống nhưng dễ uống hơn.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-karola-g-4226806.jpg" alt="Americano"></div></a>
+                    <div class="name_product">Americano Robusta</div>
+                    <div class="price_product"><span>39.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+
+            <!-- Other Drinks -->
+            <div class="product_item" data-category="other" data-description="Bột matcha Nhật Bản thượng hạng xay cùng sữa và đá, mang lại cảm giác mát lạnh và hương trà xanh thanh khiết.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-foodphotography-18794176.jpg" alt="Matcha" class="matcha-img"></div></a>
+                    <div class="name_product">Matcha Đá Xay</div>
+                    <div class="price_product"><span>65.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="other" data-description="Sự kết hợp giữa trà đào tươi mát, hương cam sảng khoái và vị sả thơm nồng, giải nhiệt tức thì.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/tra_dao_cam_sa_-_nong_4ee44b6fab0e472e9a8ad603b6c136ca_5853a08826f94bffa8e4c14cf68b8548_grande (1).png" alt="Peach Tea"></div></a>
+                    <div class="name_product">Trà Đào Cam Sả</div>
+                    <div class="price_product"><span>45.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="other" data-description="Trà đen Earl Grey hảo hạng pha cùng sữa tươi và trân châu dai giòn, mang lại trải nghiệm thú vị.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/boba-milk-tea-recipe-featured-image.jpg" alt="Milk Tea" class="milktea-img"></div></a>
+                    <div class="name_product">Trà sữa bá tước</div>
+                    <div class="price_product"><span>59.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="other" data-description="Hương vị trà tươi mát kết hợp cùng các loại trái cây nhiệt Đới mọng nước, giải nhiệt tuyệt vời.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-kh-i-huy-n-tr-ng-471596296-15894951.jpg" alt="Trà Trái Cây Nhiệt Đới"></div></a>
+                    <div class="name_product">Trà Trái Cây Nhiệt Đới</div>
+                    <div class="price_product"><span>49.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+
+            <!-- Desserts (Tráng miệng) -->
+            <div class="product_item" data-category="cake" data-description="Kem lạnh mịn màng với những vụn bánh quy giòn tan, ngọt ngào khó cưỡng.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-sarah-li-102943917-9442600.jpg" alt="Kem Cookies & Creme"></div></a>
+                    <div class="name_product">Kem Cookies & Creme</div>
+                    <div class="price_product"><span>65.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="cake" data-description="Bánh Donut nướng mềm mại, phủ một lớp socola Bỉ đậm đà và bắt mắt.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-snappr-29850934.jpg" alt="Donut socola"></div></a>
+                    <div class="name_product">Donut socola</div>
+                    <div class="price_product"><span>35.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="cake" data-description="Đế bánh Tart giòn tan, nhân kem chanh chua thanh mát lạnh, cân bằng vị giác hoàn hảo.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/pexels-valeriya-1860203.jpg" alt="Tart chanh"></div></a>
+                    <div class="name_product">Tart chanh</div>
+                    <div class="price_product"><span>59.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <!-- Added 3 New Desserts -->
+            <div class="product_item" data-category="cake" data-description="Lớp kem mousse socola Bỉ mịn màng tan chảy, kết hợp với đế bánh bông lan mềm mại.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/chocolate mouse.jpg" alt="Bánh Mousse Socola"></div></a>
+                    <div class="name_product">Bánh Mousse Socola</div>
+                    <div class="price_product"><span>55.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="cake" data-description="Chiếc bánh quyến rũ với sắc đỏ đặc trưng, lớp kem cheese béo ngậy và vị cacao nhẹ nhàng.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/red velvet.jpg" alt="Red Velvet"></div></a>
+                    <div class="name_product">Bánh Red Velvet</div>
+                    <div class="price_product"><span>59.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+            <div class="product_item" data-category="cake" data-description="Vị chua thanh của chanh dây tươi hòa quyện cùng lớp phô mai nướng đậm đà, đế bánh quy giòn rụm.">
+                <div class="product_detail">
+                    <a href="product.html"><div class="img_product"><img src="../assets/img/cheesecake chanh dây.jpg" alt="Cheesecake Chanh Dây"></div></a>
+                    <div class="name_product">Cheesecake Chanh Dây</div>
+                    <div class="price_product"><span>65.000 VNĐ</span> <i class="fa-solid fa-plus-circle"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="list_footer">
+                    <div class="footer_item">
+                        <div class="footer_brand_wrapper">
+                            <img src="../assets/img/Cup-logo.png" alt="Mocha & Co. Cup Logo" class="footer_logo">
+                            <h2 class="footer_brand_name">MOCHA & CO.</h2>
+                        </div>
+                        <p>Tận tâm mang đến những trải nghiệm cà phê tuyệt vời nhất cho cộng đồng yêu cà phê tại Việt Nam.</p>
+                        <div class="opening_hours">
+                            <h2>GIỜ MỞ CỬA</h2>
+                            <p>Thứ 2 - Thứ 6: 07:00 - 22:00</p>
+                            <p>Thứ 7 - CN: 08:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <h2>Sản Phẩm</h2>
+                        <li>Cà phê pha máy</li>
+                        <li>Trà & Macchiato</li>
+                        <li>Tráng miệng & Snack</li>
+                    </div>
+                    <div class="footer_item">
+                        <h2>Hỗ Trợ</h2>
+                        <li>Chính sách bảo mật</li>
+                        <li>Giao hàng & Thanh toán</li>
+                        <li>Câu hỏi thường gặp</li>
+                    </div>
+                    <div class="footer_item">
+                        <h2>Liên Hệ & Kết Nối</h2>
+                        <li class="contact-info"><i class="fa-solid fa-phone"></i> Hotline: 1800 1234</li>
+                        <li class="contact-info"><i class="fa-solid fa-envelope"></i> hello@mochaco.vn</li>
+                        <li class="contact-info"><i class="fa-solid fa-location-dot"></i> 123 Đường Lê Lợi, Quận 1, TP.HCM</li>
+                        
+                        <div class="social_icons footer_social_wrapper">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p>&copy; 2026 Mocha & Co. Premium Coffee Experience. Hình ảnh minh họa được lấy từ Pexels. (www.pexels.com)</p>
+            </div>
+        </footer>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
