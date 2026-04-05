@@ -186,6 +186,11 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.65);
+    transition: filter 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.home_banner:hover img {
     filter: brightness(0.75);
 }
 
@@ -200,8 +205,8 @@ main {
 }
 
 .banner_content h2 {
-    font-size: clamp(36px, 5vw, 64px);
-    font-weight: 800;
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 750;
     line-height: 1.1;
     margin-bottom: 25px;
     animation: fadeInUp 1.2s ease;
@@ -509,11 +514,15 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: filter 0.8s ease;
+    transition: filter 0.4s ease-in-out, transform 0.4s ease-in-out;
+
 }
 
 .promo_item:hover img {
-    filter: brightness(1.15) saturate(1.1);
+    filter: brightness(1.3) saturate(1.2);
+    transition: 0.4s ease;
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 30px rgba(212, 163, 115, 0.3);
 }
 
 .promo_overlay {
@@ -546,7 +555,7 @@ main {
 
 .promo_overlay .btn-shop.small-btn {
     padding: 10px 30px; 
-    font-size: 15px; 
+    font-size: 10px; 
     width: fit-content;
 }
 
