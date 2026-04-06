@@ -48,45 +48,45 @@
         </header>
 
         <!-- PRODUCT CONTENT -->
-        <section class="split_section" style="padding-top: 150px; align-items: flex-start;">
-            <div class="split_image" style="background: #f9f9f9;">
+        <section class="split_section product-detail-section">
+            <div class="split_image product-image-bg">
                 <img src="../assets/img/pexels-mew-wy-1427872-2910874.jpg" alt="Product" id="mainProductImg">
             </div>
             <div class="split_text">
-                <nav class="breadcrumb" style="margin-bottom: 20px; font-size: 14px; color: var(--text-muted);">
+                <nav class="breadcrumb breadcrumb-ext">
                     <a href="../index.html">Trang Chủ</a> / <a href="shop.html">Cửa Hàng</a> / <span id="breadcrumbName">Latte Creme</span>
                 </nav>
-                <h1 id="mainProductName" style="font-size: 48px; font-weight: 900; color: var(--primary-color); margin-bottom: 10px; text-transform: uppercase;">Latte Creme</h1>
-                <p class="product_price" id="mainProductPrice" style="font-size: 32px; font-weight: 800; color: var(--accent-color); margin-bottom: 30px;">45.000 VNĐ</p>
+                <h1 id="mainProductName" class="product-title-ext">Latte Creme</h1>
+                <p class="product-price-ext" id="mainProductPrice">45.000 VNĐ</p>
                 
-                <div class="product_description" style="margin-bottom: 35px; padding-bottom: 30px; border-bottom: 1px solid #eee;">
-                    <p id="mainProductDesc" style="font-size: 16px; color: var(--text-muted); line-height: 1.8;">
+                <div class="product-desc-wrapper">
+                    <p id="mainProductDesc" class="product-desc-text">
                         Hương vị Espresso đậm đà hòa quyện cùng lớp sữa tươi mịn màng, tạo nên một tách cà phê hoàn hảo cho buổi sáng tỉnh táo.
                     </p>
                 </div>
 
                 <!-- SIZE SELECTION -->
-                <div class="size_selection" style="margin-bottom: 35px;">
-                    <h4 style="font-weight: 800; margin-bottom: 15px; font-size: 14px; letter-spacing: 1px;">CHỌN KÍCH CỠ:</h4>
-                    <div style="display: flex; gap: 15px;">
+                <div class="product-size-wrapper">
+                    <h4 class="product-size-title">CHỌN KÍCH CỠ:</h4>
+                    <div class="product-size-flex">
                         <button class="size_btn active" data-size="S" data-ml="250ml" data-extra="0">S</button>
                         <button class="size_btn" data-size="M" data-ml="500ml" data-extra="10000">M</button>
                         <button class="size_btn" data-size="L" data-ml="750ml" data-extra="20000">L</button>
                     </div>
                 </div>
 
-                <div class="product_purchase" style="display: flex; gap: 20px; align-items: center;">
+                <div class="product-purchase-flex">
                     <div class="quantity_selector">
                         <button class="qty_minus">-</button>
                         <input type="number" value="1" id="productQty" readonly>
                         <button class="qty_plus">+</button>
                     </div>
-                    <button class="btn-shop add_to_cart" style="flex: 1; padding: 20px; font-size: 14px;">THÊM VÀO GIỎ HÀNG</button>
+                    <button class="btn-shop add_to_cart product-add-cart-btn">THÊM VÀO GIỎ HÀNG</button>
                 </div>
 
-                <div class="product_meta" style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee;">
-                    <p style="margin-bottom: 10px; font-size: 14px;"><span style="font-weight: 800; color: var(--primary-color);">DUNG TÍCH:</span> <span id="currentMl">250ml</span></p>
-                    <p style="margin-bottom: 10px; font-size: 14px;"><span style="font-weight: 800; color: var(--primary-color);">GIAO HÀNG:</span> 15 - 30 Phút</p>
+                <div class="product-meta-ext">
+                    <p class="product-meta-row"><span class="product-meta-label">DUNG TÍCH:</span> <span id="currentMl">250ml</span></p>
+                    <p class="product-meta-row"><span class="product-meta-label">GIAO HÀNG:</span> 15 - 30 Phút</p>
                 </div>
             </div>
         </section>
